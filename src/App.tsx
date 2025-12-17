@@ -3,10 +3,14 @@ import {Header} from './components/Header'
 
 function App() {
 
+  function handleRestart() {
+    alert('Restart clicked')
+  }
+
   return (
     <div className={styles.container}>
       <main>
-        <Header />
+        <Header current={5} max={10} onRestart={handleRestart} />
       </main>
     </div>
   )
