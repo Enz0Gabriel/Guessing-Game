@@ -2,6 +2,7 @@ import styles from './app.module.css'
 import {Header} from './components/Header'
 import { Letter } from './components/Letter'
 import {Tip} from './components/Tip'
+import { Input } from './components/input'
 
 function App() {
 
@@ -22,6 +23,13 @@ function App() {
           <Letter value="A"/>
           <Letter value="C"/>
           <Letter value="T"/>
+        </div>
+
+        <h4>Palpite</h4>
+
+        <div>
+          <Input autoFocus maxLength={1} placeholder="?"/>
+          <button></button>
         </div>
       </main>
     </div>

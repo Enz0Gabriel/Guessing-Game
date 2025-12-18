@@ -1,0 +1,14 @@
+
+.container {
+  width: 2.87rem;
+  height: 2.87rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #6363db;
+  border-radius: 0.43rem;
+  text-transform: uppercase;
+  background-color: #ebebfc;
+  font-weight: 700;
+  outline: none;
+  color: #6363db;
+}
