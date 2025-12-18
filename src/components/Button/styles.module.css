@@ -1,0 +1,12 @@
+
+.container {
+  height: 2.87rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #4F4FB9;
+  border-radius: 0.43rem;
+  background-color: #6363DB;
+  font-weight: 700;
+  color: #ebebfc;
+  padding: 0 0.87rem;
+}

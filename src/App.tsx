@@ -3,6 +3,7 @@ import {Header} from './components/Header'
 import { Letter } from './components/Letter'
 import {Tip} from './components/Tip'
 import { Input } from './components/input'
+import { Button } from './components/Button'
 
 function App() {
 
@@ -27,9 +28,9 @@ function App() {
 
         <h4>Palpite</h4>
 
-        <div>
+        <div className={styles.guess}>
           <Input autoFocus maxLength={1} placeholder="?"/>
-          <button></button>
+          <Button name="Confirmar" />
         </div>
       </main>
     </div>
