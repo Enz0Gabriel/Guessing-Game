@@ -4,6 +4,7 @@ import { Letter } from './components/Letter'
 import {Tip} from './components/Tip'
 import { Input } from './components/input'
 import { Button } from './components/Button'
+import {LettersUsed} from './components/LettersUsed'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Input autoFocus maxLength={1} placeholder="?"/>
           <Button name="Confirmar" />
         </div>
+          <LettersUsed/>
       </main>
     </div>
   )

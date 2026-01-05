@@ -1,0 +1,13 @@
+
+.lettersUsed {
+  margin-top: 3.25rem;
+  width: 100%;
+  border-top: solid 1px #c3c3c3;
+}
+
+.lettersUsed > h5 {
+  color: #32325f;
+  margin: 0.75rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
