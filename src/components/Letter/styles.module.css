@@ -15,3 +15,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.containerSmall {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.43rem;
+  border: solid 1px #6363db;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
