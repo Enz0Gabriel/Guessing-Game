@@ -24,3 +24,15 @@
   font-size: 1.25rem;
   font-weight: 500;
 }
+
+.containerCorrect {
+  background-color: #e1f5ec;
+  border-color: #03ab4f;
+  color: #03ab4f;
+} 
+
+.containerWrong {
+  background-color: #ffcf62;
+  border-color: #691b0a;
+  color: #691b0a;
+} 
