@@ -9,8 +9,8 @@ import { Button } from './components/Button'
 import {LettersUsed} from './components/LettersUsed'
 
 export default function App() {
-  const [score, setScore] = useState(0)
   const [letter, setLetter] = useState("")
+  const [attempts, setAttempts] = useState(0)
   const [challenge, setChallenge] = useState<Challenge | null>(null)
 
   function handleRestart() {
@@ -21,7 +21,7 @@ export default function App() {
     const index = Math.floor(Math.random() * WORDS.length)
     const randomWord = WORDS[index]
     setChallenge(randomWord)
-    setScore(0)
+    setAttempts(0)
     setLetter("")
   }
 
@@ -29,19 +29,23 @@ export default function App() {
     startGame()
   }, [])
 
+  if (!challenge) {
+    return
+  }
+
   return (
     <div className={styles.container}>
       <main>
-        <Header current={5} max={10} onRestart={handleRestart} />
+        <Header current={attempts} max={10} onRestart={handleRestart} />
 
         <Tip tip="Lembre-se de revisar seu código antes de enviar!" />
 
         <div className={styles.word}>
-          <Letter value="R"/>
-          <Letter value="E"/>
-          <Letter value="A"/>
-          <Letter value="C"/>
-          <Letter value="T"/>
+          {
+            challenge.word.split("").map(() => (
+              <Letter value=""/>
+            ))
+          }
         </div>
 
         <h4>Palpite</h4>
