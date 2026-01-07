@@ -6,11 +6,12 @@ import { Letter } from './components/Letter'
 import {Tip} from './components/Tip'
 import { Input } from './components/input'
 import { Button } from './components/Button'
-import {LettersUsed} from './components/LettersUsed'
+import {LettersUsed, type LettersUsedProps} from './components/LettersUsed'
 
 export default function App() {
   const [letter, setLetter] = useState("")
   const [attempts, setAttempts] = useState(0)
+  const [lettersUsed, setLettersUsed] = useState<LettersUsedProps[]>([])
   const [challenge, setChallenge] = useState<Challenge | null>(null)
 
   function handleRestart() {
@@ -54,7 +55,7 @@ export default function App() {
           <Input autoFocus maxLength={1} placeholder="?"/>
           <Button name="Confirmar" />
         </div>
-          <LettersUsed/>
+          <LettersUsed data={lettersUsed}/>
       </main>
     </div>
   )
